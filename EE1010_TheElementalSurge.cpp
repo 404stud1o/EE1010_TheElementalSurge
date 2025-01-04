@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <cstdlib>
 #include <ctime>
@@ -42,7 +42,8 @@ int main() {
                 PvPMode();
             }
             else {
-                cout << "Syntax Error. Game Terminating... \nPlease Rerun The Game." << endl;
+                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+                Sleep(2500);
                 break;
                 main();
             }
@@ -54,7 +55,8 @@ int main() {
             exit(0);
         }
         else {
-            cout << "Syntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+            cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+            Sleep(2500);
             break;
             main();
         }
@@ -183,7 +185,8 @@ int BasicLevel() {
                 }
             }
             else {
-                cout << "Syntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+                Sleep(2500);
                 continue;
             }
 
@@ -220,6 +223,7 @@ int BasicLevel() {
         }
 
         if (playerHP <= 0) {
+            cout << "\n" << playerName << "'s HP: " << playerHP << "  |  Opponent's HP: " << opponentHP << "\n" << endl;
             cout << "\nDEFEATED. Game Over. \n";
             Again();
         }
@@ -228,25 +232,25 @@ int BasicLevel() {
     cout << "\nVICTORY! Congratulations, " << playerName << "! \n";
 
     if (playerHP >= 900) {
-        cout << "You have cleared the Basic Level with an S ranking! \n";
+        cout << "You have cleared this level with an S ranking! \n";
     }
     else if (playerHP >= 750) {
-        cout << "You have cleared the Basic Level with an A+ ranking! \n";
+        cout << "You have cleared this level with an A+ ranking! \n";
     }
     else if (playerHP >= 650) {
-        cout << "You have cleared the Basic Level with an A ranking! \n";
+        cout << "You have cleared this level with an A ranking! \n";
     }
     else if (playerHP >= 500) {
-        cout << "You have cleared the Basic Level with a B ranking! \n";
+        cout << "You have cleared this level with a B ranking! \n";
     }
     else if (playerHP >= 300) {
-        cout << "You have cleared the Basic Level with a C ranking! \n";
+        cout << "You have cleared this level with a C ranking! \n";
     }
     else if (playerHP >= 100) {
-        cout << "You have cleared the Basic Level with a D ranking! \n";
+        cout << "You have cleared this level with a D ranking! \n";
     }
     else if (playerHP > 0) {
-        cout << "You have cleared the basic level with an E ranking! \n";
+        cout << "You have cleared this level with an E ranking! \n";
     }
 
     Again();
@@ -328,7 +332,8 @@ void PvPMode() {
             }
         }
         else {
-            cout << "Syntax Error. " << player1Name <<"'s turn has been automatically skipped. \n";
+            cout << "\nSyntax Error. " << player1Name <<"'s turn has been automatically skipped. \n";
+            Sleep(1000);
         }
 
         // Player 1 wins
@@ -409,7 +414,8 @@ void PvPMode() {
             }
         }
         else {
-            cout << "Syntax Error. " << player2Name <<"'s turn has been automatically skipped. \n";
+            cout << "\nSyntax Error. " << player2Name <<"'s turn has been automatically skipped. \n";
+            Sleep(1000);
         }
 
         // Player 2 wins
@@ -464,7 +470,8 @@ void Again() {
             main();
         }
         else {
-            cout << "Syntax Error. Game Restarting..." << endl;
+            cout << "\nSyntax Error. Game Restarting..." << endl;
+            Sleep(1500);
             main();
         }
     }
