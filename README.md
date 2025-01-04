@@ -6,7 +6,8 @@
     Game           Category:   Text-Based RPG Game.
     Program  Base  Language:   C++ (.cpp)
     User Interface Language:   British English
-    Operating        System:   Windows (direct .exe download); MacOS, Linux (requires compiling .cpp with IDE)
+    Operating        System:   Windows (direct .exe download);
+                               MacOS, Linux (requires compiling .cpp with IDE)
     Last             Edited:   Friday 03 January 2025
 
 ## Instructions
