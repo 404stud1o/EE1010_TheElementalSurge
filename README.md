@@ -19,10 +19,10 @@
 
 *   The game will be initialised with a default health of `1000 HP`, **3** attack skills, and a Power Shield. The attack skills are as following: 
 
-        A.  Fire Punch        (Attack),  Opponent –100 HP
-        B.  Voltage Blast     (Attack),  Opponent –200 HP
-        C.  Power Shield      (Defend),  Player   +500 HP  [3 Uses]
-        D.  Mysterious Sonar  (Attack),  Opponent –500 HP  [1 Use ]
+        A.  Fire Punch        (Attack),  Opponent  –100 HP
+        B.  Voltage Blast     (Attack),  Opponent  –200 HP
+        C.  Power Shield      (Defend),  Player    +500 HP  [3 Uses]
+        D.  Mysterious Sonar  (Attack),  Opponent  –500 HP  [1 Use ]
 
 
 ### 2 Players PvP Mode
@@ -30,10 +30,10 @@
 
 *   The attack skills are as following:
 
-        A.  Aqua Burst          (Attack),  Opponent –200 HP
-        B.  Golden Blast        (Attack),  Opponent –400 HP
-        C.  Power Shield        (Defend),  Player   +300 HP  [3 Uses]
-        D.  Quantum Demolisher  (Attack),  Opponent –800 HP  [1 Use ]
+        A.  Aqua Burst          (Attack),  Opponent  –200 HP
+        B.  Golden Blast        (Attack),  Opponent  –400 HP
+        C.  Power Shield        (Defend),  Player    +300 HP  [3 Uses]
+        D.  Quantum Demolisher  (Attack),  Opponent  –800 HP  [1 Use ]
 
 
 ### Additional Information
