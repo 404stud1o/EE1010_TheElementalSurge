@@ -8,7 +8,8 @@
     Supported      Language:   British English
     Operating        System:   Windows (direct .exe download);
                                MacOS, Linux (requires compiling .cpp with IDE, and manually removing windows.h related codes)
-    Last             Edited:   Wednesday0 08 January 2025
+                               
+    Last             Edited:   Wednesday 08 January 2025
 
 ## Instructions
 
