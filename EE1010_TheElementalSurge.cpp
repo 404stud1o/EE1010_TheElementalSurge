@@ -13,7 +13,7 @@ void PvPMode();
 void Again();
 
 int main() {
-    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical Role-Playing Game (RPG) by Henry Li-" << endl;
+    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical RPG Game by Henry Li-" << endl;
 
     while (true) {
         cout << "\n------ Home ------ \n";
@@ -42,7 +42,7 @@ int main() {
                 PvPMode();
             }
             else {
-                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually. \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
                 Sleep(2500);
                 break;
                 main();
@@ -55,7 +55,7 @@ int main() {
             exit(0);
         }
         else {
-            cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+            cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually. \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
             Sleep(2500);
             break;
             main();
@@ -66,8 +66,13 @@ int main() {
 }
 
 void Instructions() {
+    cout << "\nLoading Instructions... \n";
+    Sleep(500);
+
     cout << "\n----- Instructions ----- \n";
     cout << "This game follows a regular turn-based role-playing game (RPG) structure. \n";
+
+    Sleep(1500);
 
     cout << "\nThe Single Player mode consists of 3 stages.\n";
     cout << "The game will be initialised with a default health of 1000 HP, 3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
@@ -76,13 +81,17 @@ void Instructions() {
     cout << "   C.	Power Shield (Defend), blocks & recovers 500 HP damage from opponent’s next attack [3 Uses] \n";
     cout << "   D.	Mysterious Sonar (Attack), Opponent –500 HP [1 Use] \n";
 
-    cout << "\nThe 2 Players PvP mode will initialise both players with the same settings of a default health of 1000 HP, \n3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
+    Sleep(5000);
+
+    cout << "\nThe 2 Players Player-vs-Player (PvP) mode will initialise both players with the same settings of a default health of 1000 HP, \n3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
     cout << "   A.	Aqua Burst (Attack), Opponent –200 HP \n";
     cout << "   B.	Golden Blast (Attack), Opponent –400 HP \n";
     cout << "   C.	Power Shield (Defend), blocks & recovers 300 HP damage from opponent’s next attack [3 Uses] \n";
     cout << "   D.	Quantum Demolisher (Attack), Opponent –800 HP [1 Use] \n";
 
     cout << "\n * Please note that the Power Shield will never recover you to maximum health (HP 1000) * \n";
+
+    Sleep(5000);
 
     char returnInput;
     cout << "\nPlease press any character and 'Enter' to return to main menu.";
@@ -100,6 +109,7 @@ int BasicLevel() {
     string playerName;
 
     cout << "\nYou are now entering the Single Player Mode... \n";
+    Sleep(500);
 
     cout << "\n Enter player name: ";
     cin >> playerName;
@@ -185,7 +195,7 @@ int BasicLevel() {
                 }
             }
             else {
-                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually." << endl;
+                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually. \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
                 Sleep(2500);
                 continue;
             }
@@ -262,7 +272,8 @@ int BasicLevel() {
 void PvPMode() {
     string player1Name, player2Name;
 
-    cout << "\nYou are now entering the Single Player Mode... \n";
+    cout << "\nYou are now entering the 2 Players PvP Mode... \n";
+    Sleep(500);
 
     cout << "\n Enter Player 1 Name: ";
     cin >> player1Name;
@@ -470,13 +481,13 @@ void Again() {
             main();
         }
         else {
-            cout << "\nSyntax Error. Game Restarting..." << endl;
+            cout << "\nSyntax Error. Game Restarting... \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
             Sleep(1500);
             main();
         }
     }
     else if (againInput == 'N' || againInput == 'n') {
-        cout << "\nThank you for playing The Elemental Surge. \n(c)2025 Royal Holloway, University of London.";
+        cout << "\nThank you for playing The Elemental Surge. \n \nVersion: 2025v3_0108 \n(c)2025 Royal Holloway, University of London.\n";
         Sleep(2500);
         exit(0);
     }
