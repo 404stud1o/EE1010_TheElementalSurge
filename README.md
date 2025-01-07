@@ -5,10 +5,10 @@
     Author     &     Editor:   Henry Li
     Game           Category:   Text-Based Tactical RPG Game
     Program  Base  Language:   C++ (.cpp)
-    User Interface Language:   British English
+    Supported      Language:   British English
     Operating        System:   Windows (direct .exe download);
                                MacOS, Linux (requires compiling .cpp with IDE, and manually removing windows.h related codes)
-    Last             Edited:   Friday 03 January 2025
+    Last             Edited:   Wednesday0 08 January 2025
 
 ## Instructions
 
@@ -41,6 +41,10 @@
 
 
 ## Copyright Information
-Submitted for module: `EE1010 - Programming in C++`
+    Author    :  Henry Li
+    Editor    :  Henry Li
+    Typewriter:  Henry Li
 
-© 2025 Department of Electronic Engineering,  Royal Holloway, University of London.
+**_This game is submitted as a module assignment for_ "`EE1010 - Programming in C++`" _to the Department of Electronic Engineering of Royal Holloway, University of London, and therefore is copyrighted to RHUL. This software is forbidden to be copied or reused anywhere else without the permission of RHUL._**
+
+© 2025 Royal Holloway, University of London.
