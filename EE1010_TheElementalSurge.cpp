@@ -13,7 +13,7 @@ void PvPMode();
 void Again();
 
 int main() {
-    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical RPG Game by Henry Li-" << endl;
+    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical Role-Playing Game (RPG) by Henry Li-" << endl;
 
     while (true) {
         cout << "\n------ Home ------ \n";
