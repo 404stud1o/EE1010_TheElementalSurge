@@ -41,6 +41,6 @@
 
 
 ## Copyright Information
-Submitted for module EE1010 - Programming in C++
+Submitted for module: `EE1010 - Programming in C++`
 
 © 2025 Department of Electronic Engineering,  Royal Holloway, University of London.
