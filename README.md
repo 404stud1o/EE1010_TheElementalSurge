@@ -7,7 +7,7 @@
     Program  Base  Language:   C++ (.cpp)
     User Interface Language:   British English
     Operating        System:   Windows (direct .exe download);
-                               MacOS, Linux (requires compiling .cpp with IDE, and removing windows.h related codes)
+                               MacOS, Linux (requires compiling .cpp with IDE, and manually removing windows.h related codes)
     Last             Edited:   Friday 03 January 2025
 
 ## Instructions
