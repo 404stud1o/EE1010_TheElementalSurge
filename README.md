@@ -3,7 +3,7 @@
 ## Information
 
     Author     &     Editor:   Henry Li
-    Game           Category:   Text-Based RPG Game.
+    Game           Category:   Text-Based Tactical RPG Game
     Program  Base  Language:   C++ (.cpp)
     User Interface Language:   British English
     Operating        System:   Windows (direct .exe download);
