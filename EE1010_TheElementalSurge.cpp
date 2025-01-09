@@ -6,6 +6,9 @@
 
 using namespace std;
 
+string version = "2025v4_0108";
+
+void Home();
 void Instructions();
 
 int BasicLevel();
@@ -13,56 +16,57 @@ void PvPMode();
 void Again();
 
 int main() {
-    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical RPG Game by Henry Li-" << endl;
-
-    while (true) {
-        cout << "\n------ Home ------ \n";
-        cout << " 1. Start New Game \n 2. Instructions \n 3. Quit Game \n";
-        cout << "Select option: ";
-        int startInput;
-        cin >> startInput;
-
-        if (startInput == 1) {
-            cout << "\n--- Game Modes --- \n";
-            cout << " a. Single Player \n b. 2 Players PvP \n";
-            cout << "Select game mode: ";
-            char modeInput;
-            cin >> modeInput;
-
-            if (modeInput == 'A') {
-                BasicLevel();
-            }
-            else if (modeInput == 'a') {
-                BasicLevel();
-            }
-            else if (modeInput == 'B') {
-                PvPMode();
-            }
-            else if (modeInput == 'b') {
-                PvPMode();
-            }
-            else {
-                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually. \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
-                Sleep(2500);
-                break;
-                main();
-            }
-        }
-        else if (startInput == 2) {
-            Instructions();
-        }
-        else if (startInput == 3) {
-            exit(0);
-        }
-        else {
-            cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually. \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
-            Sleep(2500);
-            break;
-            main();
-        }
-    }
+    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical Role Playing Game by Henry Li-" << endl;
+    Home();
 
     return 0;
+}
+
+void Home() {
+    cout << "\n------ Home ------ \n";
+    cout << " 1. Start New Game \n 2. Instructions \n 3. Quit Game \n";
+    cout << "Select option: ";
+    int startInput;
+    cin >> startInput;
+
+    if (startInput == 1) {
+        cout << "\n--- Game Modes --- \n";
+        cout << " a. Single Player \n b. 2 Players PvP \n";
+        cout << "Select game mode: ";
+        char modeInput;
+        cin >> modeInput;
+
+        if (modeInput == 'A') {
+            BasicLevel();
+        }
+        else if (modeInput == 'a') {
+            BasicLevel();
+        }
+        else if (modeInput == 'B') {
+            PvPMode();
+        }
+        else if (modeInput == 'b') {
+            PvPMode();
+        }
+        else {
+                cout << "\nSyntax Error. Game Restarting... \n" << endl;
+                Sleep(500);
+                main();
+        }
+    }
+    else if (startInput == 2) {
+        Instructions();
+    }
+    else if (startInput == 3) {
+        cout << "\nThank you for playing The Elemental Surge. \n \nVersion: " << version << " \n(c)2025 Royal Holloway, University of London.\n";
+        Sleep(2500);
+        exit(0);
+    }
+    else {
+        cout << "\nSyntax Error. Game Restarting... \n" << endl;
+        Sleep(500);
+        main();
+        }
 }
 
 void Instructions() {
@@ -98,10 +102,10 @@ void Instructions() {
     cin >> returnInput;
 
     if (returnInput == 'R' || returnInput == 'r') {
-        main();
+        Home();
     }
     else {
-        main();
+        Home();
     }
 }
 
@@ -195,9 +199,9 @@ int BasicLevel() {
                 }
             }
             else {
-                cout << "\nSyntax Error. Game Terminating... \nPlease Restart The Game Manually. \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
-                Sleep(2500);
-                continue;
+                cout << "\nSyntax Error. Returning to Home Menu... \n" << endl;
+                Sleep(500);
+                Home();
             }
 
             if (opponentHP <= 0) {
@@ -343,8 +347,9 @@ void PvPMode() {
             }
         }
         else {
-            cout << "\nSyntax Error. " << player1Name <<"'s turn has been automatically skipped. \n";
-            Sleep(1000);
+            cout << "\nSyntax Error. Returning to Home Menu... \n" << endl;
+            Sleep(500);
+            Home();
         }
 
         // Player 1 wins
@@ -425,8 +430,9 @@ void PvPMode() {
             }
         }
         else {
-            cout << "\nSyntax Error. " << player2Name <<"'s turn has been automatically skipped. \n";
-            Sleep(1000);
+            cout << "\nSyntax Error. Returning to Home Menu... \n" << endl;
+            Sleep(500);
+            Home();
         }
 
         // Player 2 wins
@@ -481,13 +487,13 @@ void Again() {
             main();
         }
         else {
-            cout << "\nSyntax Error. Game Restarting... \n \nVersion: 2025v2 \n(c)2025 Royal Holloway, University of London.\n" << endl;
-            Sleep(1500);
-            main();
+            cout << "\nSyntax Error. Returning to Home Menu... \n" << endl;
+            Sleep(500);
+            Home();
         }
     }
     else if (againInput == 'N' || againInput == 'n') {
-        cout << "\nThank you for playing The Elemental Surge. \n \nVersion: 2025v3_0108 \n(c)2025 Royal Holloway, University of London.\n";
+        cout << "\nThank you for playing The Elemental Surge. \n \nVersion: " << version << " \n(c)2025 Royal Holloway, University of London.\n";
         Sleep(2500);
         exit(0);
     }
