@@ -80,17 +80,17 @@ void Instructions() {
 
     cout << "\nThe Single Player mode consists of 3 stages.\n";
     cout << "The game will be initialised with a default health of 1000 HP, 3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
-    cout << "   A.	Fire Punch (Attack), Opponent –100 HP \n";
-    cout << "   B.	Voltage Blast (Attack), Opponent –200 HP \n";
-    cout << "   C.	Power Shield (Defend), blocks & recovers 500 HP damage from opponent’s next attack [3 Uses] \n";
+    cout << "   A.	Fire Punch       (Attack), Opponent –100 HP \n";
+    cout << "   B.	Voltage Blast    (Attack), Opponent –200 HP \n";
+    cout << "   C.	Power Shield     (Defend), Player   +500 HP [3 Uses] \n";
     cout << "   D.	Mysterious Sonar (Attack), Opponent –500 HP [1 Use] \n";
 
     Sleep(5000);
 
     cout << "\nThe 2 Players Player-vs-Player (PvP) mode will initialise both players with the same settings of a default health of 1000 HP, \n3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
-    cout << "   A.	Aqua Burst (Attack), Opponent –200 HP \n";
-    cout << "   B.	Golden Blast (Attack), Opponent –400 HP \n";
-    cout << "   C.	Power Shield (Defend), blocks & recovers 300 HP damage from opponent’s next attack [3 Uses] \n";
+    cout << "   A.	Aqua Burst         (Attack), Opponent –200 HP \n";
+    cout << "   B.	Golden Blast       (Attack), Opponent –400 HP \n";
+    cout << "   C.	Power Shield       (Defend), Player   +300 HP [3 Uses] \n";
     cout << "   D.	Quantum Demolisher (Attack), Opponent –800 HP [1 Use] \n";
 
     cout << "\n * Please note that the Power Shield will never recover you to maximum health (HP 1000) * \n";
