@@ -16,8 +16,8 @@
 
 ### Single Player Mode
 *   The **Single Player mode** consists of **3** stages.
-
-*   The game will be initialised with a default health of `1000 HP`, **3** attack skills, and a Power Shield. The attack skills are as following: 
+*   The game will be initialised with a default health of `1000 HP`, **3** attack skills, and a Power Shield.
+*   The attack skills are as following: 
 
         A.  Fire Punch        (Attack),  Opponent  –100 HP
         B.  Voltage Blast     (Attack),  Opponent  –200 HP
@@ -27,7 +27,6 @@
 
 ### 2 Players PvP Mode
 *   The **2 Players PvP mode** will initialise both players with the same settings of a default health of `1500 HP`, **3** attack skills, and a Power Shield. 
-
 *   The attack skills are as following:
 
         A.  Aqua Burst          (Attack),  Opponent  –200 HP
