@@ -6,10 +6,9 @@
     Game           Category:   Text-Based Tactical RPG Game
     Program  Base  Language:   C++ (.cpp)
     Supported      Language:   British English
-    Operating        System:   Windows (direct .exe download);
-                               MacOS, Linux (requires compiling .cpp with IDE, and manually removing windows.h related codes)
+    Operating        System:   Windows (Direct .exe Download Available)
                                
-    Last             Edited:   Wednesday 08 January 2025
+    Last             Edited:   SUnday 12 January 2025
 
 ## Instructions
 
