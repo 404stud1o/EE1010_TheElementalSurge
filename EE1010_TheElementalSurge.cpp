@@ -1,4 +1,5 @@
-// The Elemental Surge, by Henry Li
+// EE1010 Final Project | The Elemental Surge, by Henry Li
+// Language: C++ 20
 // Libraries
 #include <iostream>
 #include <string>
@@ -10,7 +11,7 @@ using namespace std;
 // Version
 string version = "2025v5_0112";
 
-// Functions
+// Functions Declaration
 void Home();
 void Instructions();
 int BasicLevel();
@@ -20,7 +21,7 @@ void Again();
 // Main Function
 int main() {
     // Welcome message
-    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical Role Playing Game by Henry Li-" << endl;
+    cout << "\nWelcome to The Elemental Surge -A Text-Based Tactical Role-Playing Game by Henry Li-" << endl;
     Home();
 
     return 0;
@@ -37,7 +38,7 @@ void Home() {
     // Game Mode Selection
     if (startInput == 1) {
         cout << "\n--- Game Modes --- \n";
-        cout << " a. Single Player \n b. 2 Players PvP \n";
+        cout << " a. Single Player \n b. 2 Players PvP \n c. Return to Home \n";
         cout << "Select Game Mode: ";
         char modeInput;
         cin >> modeInput;
@@ -56,6 +57,14 @@ void Home() {
         }
         else if (modeInput == 'b') {
             PvPMode();
+        }
+
+        // C - Return to Home Menu
+        else if (modeInput == 'C') {
+            Home();
+        }
+        else if (modeInput == 'c') {
+            Home();
         }
 
         // Error message, return to home
@@ -105,13 +114,13 @@ void Instructions() {
 
     Sleep(5000);
 
-    cout << "\nThe 2 Players Player-vs-Player (PvP) mode will initialise both players with the same settings of a default health of 1000 HP, \n3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
+    cout << "\nThe 2 Players Player-vs-Player (PvP) mode will initialise both players with a default health of 1500 HP, 3 attack skills, and a Power Shield. \nThe attack skills are as following: \n";
     cout << "   A.	Aqua Burst         (Attack),  Opponent –200 HP \n";
     cout << "   B.	Golden Blast       (Attack),  Opponent –400 HP \n";
     cout << "   C.	Power Shield       (Defend),  Player   +300 HP [3 Uses] \n";
     cout << "   D.	Quantum Demolisher (Attack),  Opponent –800 HP [1 Use] \n";
 
-    cout << "\n * Please note that the Power Shield will never recover you to maximum health (HP 1000) * \n";
+    cout << "\n * Please note that the Power Shield will never recover you to maximum health * \n";
 
     Sleep(5000);
 
@@ -175,7 +184,7 @@ int BasicLevel() {
             // Ask player to choose and list moves
             cout << "\n" << playerName << ", choose your move: \n";
             cout << " A. Fire Punch (-100 HP) \n B. Voltage Blast (-200 HP) \n C. Power Shield (+500 HP) [" << shieldCounter << " Uses Remaining] \n D. Mysterious Sonar (-500 HP) [1 Use] \n";
-            cout << "Your move: ";
+            cout << "Your Move: ";
             char move;
             cin >> move;;
 
@@ -226,7 +235,7 @@ int BasicLevel() {
                     cout << "\n" << "You used Mysterious Sonar! \n";
                 }
                 else {
-                    cout << "Mysterious Sonar can only be used once. \n";
+                    cout << "\nMysterious Sonar can only be used once. \n";
                 }
             }
 
@@ -487,7 +496,7 @@ void PvPMode() {
                 cout << "\n" << player2Name << " used Quantum Demolisher! \n";
             }
             else {
-                cout << "No remaining Quantum Demolisher for " << player2Name << ". \n";
+                cout << "\nNo remaining Quantum Demolisher for " << player2Name << ". \n";
             }
         }
 
