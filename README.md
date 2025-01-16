@@ -8,7 +8,7 @@
     Supported      Language:   British English
     Operating        System:   Windows (Direct .exe Download Available)
                                
-    Last             Edited:   SUnday 12 January 2025
+    Last             Edited:   Sunday 12 January 2025
 
 ## Instructions
 
